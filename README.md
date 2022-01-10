@@ -11,6 +11,8 @@ This works halfautomatic, you still have to solve the captcha to create the acco
 
 Launch the `OSRS-Account-Creator.exe` to open the account maker. When you start the application, it creates in the same directory the directories and files it needs to work.
 
+<img src="https://user-images.githubusercontent.com/59608685/148834052-82708bdd-03f6-4cfb-865d-764f5eef51eb.JPG" width="645">
+
 ### Data directory
 - `.\Data\Generated Accounts`: The accounts you create are saved in this directory. "GeneratedAccounts.txt" contains all of them, while "Account_Session_N.txt" stores only the accounts you created while you run the tool. If you start it another time, it will store the tool now in another "Account_Session_N.txt" file (N is the session index, which increases every restart).
 - `.\Data\Proxys`: This directory contains the "Proxys.txt" from which the application takes it's proxys for individual accounts. Put the proxys in the format host:port:username:password and make a new line for each one. username:password isn't required.
@@ -26,7 +28,7 @@ Launch the `OSRS-Account-Creator.exe` to open the account maker. When you start 
 ```
 - `.Config\Settings.txt`: Here are the paths to the Data-Files stored, you can change them to what ever you like.
 
-### How to use the tool in general:
+### How to use the tool in general
 
 - The Randomize-buttons fills your textboxes with random data, if you have name a namelist and/or proxylist.
 - The Change-buttons allows you to change the directory structure of the Data-Directory
@@ -37,4 +39,9 @@ Launch the `OSRS-Account-Creator.exe` to open the account maker. When you start 
 - "Fill Form" will copy your account data into the submit for of the website
 - "Save Account To File" will save your accounts into your files
 
-![OSRS-Preview](https://user-images.githubusercontent.com/59608685/148834052-82708bdd-03f6-4cfb-865d-764f5eef51eb.JPG)
+### Troubleshooting
+- If you can't launch the application, you propably don't have .Net framework installed, type in in google and install the latest version
+- If the application worked fine, but then it won't start anymore, it has maybe some missconfiguration in the `.\Config` files, just delete them and start the application again
+- Still trouble to launch it? Try launch it with administrator priviligies
+- If the connections get's timeout or your have any connection issues, you can try adjust your firewall to white list this application
+- Another problem for network problems could be your proxy, use the proxy checker inside or any other to test the connection
